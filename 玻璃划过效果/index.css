@@ -1,0 +1,38 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  /*text-transform: uppercase;*//*转化为大写*/
+  margin-top: 100px;
+  color: white;
+  font-weight: bold;
+  line-height: 200px;
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  background-image: linear-gradient(to right,#ff847c,#e84a5f);
+  font-size: 30px;
+  position: relative;
+  border-radius: 13px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.box:after{
+  content: '';
+  position: absolute;
+  height: 70px;
+  width: 700px;
+  transform: translate(-100%,0) rotate(-45deg);
+  background:linear-gradient(to top,white,transparent,white) ;
+}
+.box:hover:after{
+  transform: translate(100%,0) rotate(-45deg);
+  transition: 0.5s;
+}
+
